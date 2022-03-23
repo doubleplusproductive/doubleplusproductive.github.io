@@ -3,6 +3,10 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.main-content {
+    color: #FFFFFF;
+}
+
 
 /* cyrillic-ext */
 @font-face {
