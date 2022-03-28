@@ -111,6 +111,23 @@
                 Dies startet die drei unabhängig voneinander laufenden Microservices zur Überwachung von Webcam, Maus und Tastatur.
             </p>
         </div>
+        <div>
+            <h4>User Interface</h4>
+            <p>
+                Um das User Interface zu benutzen, muss node und npm auf dem Gerät installiert sein. Klonen Sie das <a href="https://gitlab.hpi.de/doubleplusproductive/dpp-services">entsprechende Repository</a> und führen Sie im Ordner angular-electron den Befehl <code>npm install</code> aus. Passen sie den Inhalt der entsprechenden Environmentdatei in <code>angular-electron/src/environments</code> an, um sich mit der richtigen Server-Adresse und der richtigen Client ID zu verbinden. Im Anschluss kann die Anwendung mit <code>npm start</code> gestartet werden. Die Anwendung wird sowohl im Webbrowser, als auch in einem Electron Fenster geöffnet. Sie können die Anwendung mit <code>npm run electron:local</code> auch nur in einem Electron Fenster starten.
+            </p>
+            <p>
+                Eine direkt ausführbare Datei lässt sich mit dem entsprechenden Befehl:
+            </p>
+            <ul>
+                <li><code>npm run electron:build-mac</code></li>
+                <li><code>npm run electron:build-linux</code></li>
+                <li><code>npm run electron:build-windows</code></li>
+            </ul>
+            <p>
+                erstellen. Diese befindet sich dann im Ordner <code>angular-electron/release/_operating-system_</code> und kann von dort gestartet werden. 
+            </p>
+        </div>
         <hr>
 
 
