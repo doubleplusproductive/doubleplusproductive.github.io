@@ -52,6 +52,7 @@
         <p>
             Schon "konventionelle" Überwachungslösungen <a href="https://www.handelsblatt.com/technik/digitale-revolution/digitale-revolution-die-digitale-ueberwachung-wie-unternehmen-ihre-mitarbeiter-beschatten/25917236.html">führen eher zu einer Anpassung der Mitarbeitenden an die jeweiligen Überwachungssysteme</a> und eine ständige Überwachung birgt viele <a href="https://www.heise.de/hintergrund/KI-bewertet-Produktivitaet-von-Mitarbeitern-4777834.html">Nachteile</a>. Das Vertrauensverhältnis wird gestört und eine Anwendung von "Künstlicher Intelligenz" vermittelt den falschen Eindruck von Objektivität. Mit Doubleplusproductive wollen wir diesen Ansatz also auf die Spitze treiben und durch Anwendung von Gamification die Angestellten dazu bringen, sich gegenseitig zu überwachen. Das Resultat einer Anwendung von Doubleplusproductive in einem Unternehmen wäre dabei vermutlich die Erzeugung einer ungesunden, von Paranoia geprägten Arbeitsatmosphäre. 
         </p>
+        <hr>
 
         <h2 id="komponenten">Komponenten - Welche gibt es?</h2>
         <p>
@@ -92,11 +93,25 @@
                 Im Wesentlichen besteht sie aus zwei Komponenten. Die Eine bietet eine Übersicht über die Scores der überwachten Kolleg:innen. Die andere Komponente ist eine Shop-Seite, in der die verfügbaren Produkte mit der zuvor verdienten Währung erworben werden können. Diese werden dann in einer übergeordneten Inventar-Ansicht angezeigt und können von dort aus direkt angewendet werden.
             </p>
         </div>
+        <hr>
 
         <h2 id="installation">Installation - Wie baue und starte ich Doubleplusproductive?</h2>
-        <p>
-            So wird doubleplusproductive genutzt...
-        </p>
+        Die Git-Repositories für doubleplusproductive befinden sich im offiziellen <a href="https://gitlab.hpi.de/doubleplusproductive">HPI-GitLab</a>.
+        <div>
+            <h4>Microservices</h4>
+            <p>
+                Um die Microservices auf einem Client-Rechner zu starten, muss Python (>= 3.7) auf dem Gerät installiert sein. Klonen Sie das <a href="https://gitlab.hpi.de/doubleplusproductive/dpp-services">entsprechende Repository</a> und installieren Sie den Inhalt der <code>requirements.txt</code>. Gegebenenfalls passen Sie den Inhalt der <code>config.ini</code> an und ändern die Server-Adresse, sowie die ID des Clients. Anschließend müssen in drei separaten Konsolenfenstern die folgenden Befehle ausgeführt werden:
+            </p>
+            <ul>
+                <li><code>python3 service_launcher.py webcam</code></li>
+                <li><code>python3 service_launcher.py mouse</code></li>
+                <li><code>python3 service_launcher.py keyboard</code></li>
+            </ul>
+            <p>
+                Dies startet die drei unabhängig voneinander laufenden Microservices zur Überwachung von Webcam, Maus und Tastatur.
+            </p>
+        </div>
+        <hr>
 
 
         <h2 id="team">Team - Wer hat Doubleplusproductive entwickelt?</h2>
